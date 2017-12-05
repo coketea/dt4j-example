@@ -11,19 +11,21 @@
 
     <properties>
         <encoding>UTF-8</encoding>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
         <springboot.version>1.5.9.RELEASE</springboot.version>
         <dubbo.version>2.5.7</dubbo.version>
         <junit.version>4.12</junit.version>
         <zkclient.version>0.1</zkclient.version>
         <mysql.connector.version>5.1.21</mysql.connector.version>
+        <fastjson.version>1.2.41</fastjson.version>
     </properties>
 
     <modules>
         <module>dt-participant1</module>
         <module>dt-participant2</module>
-        <module>dt-service-def</module>
+        <module>dt-participant-api</module>
+        <module>dt-participant-common</module>
     </modules>
 
     <dependencyManagement>
@@ -80,7 +82,13 @@
 
             <dependency>
                 <groupId>com.coketea</groupId>
-                <artifactId>dt-service-def</artifactId>
+                <artifactId>dt-participant-common</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.coketea</groupId>
+                <artifactId>dt-participant-api</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
             </dependency>
 
@@ -89,6 +97,31 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.connector.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.coketea</groupId>
+                <artifactId>dt-datasource</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.coketea</groupId>
+                <artifactId>dt-agent</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.coketea</groupId>
+                <artifactId>dt-client</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 </project>

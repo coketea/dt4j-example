@@ -9,28 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dt-participant1</artifactId>
+    <artifactId>dt-participant-common</artifactId>
 
     <dependencies>
-
         <dependency>
             <groupId>com.oqiji.springboot</groupId>
             <artifactId>starter-dubbo-server</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.oqiji.springboot</groupId>
-            <artifactId>starter-dubbo-common</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
@@ -40,28 +24,22 @@
 
         <dependency>
             <groupId>com.coketea</groupId>
-            <artifactId>dt-participant-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.coketea</groupId>
             <artifactId>dt-datasource</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.coketea</groupId>
-            <artifactId>dt-participant-common</artifactId>
+            <artifactId>dt-agent</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.coketea</groupId>
             <artifactId>dt-client</artifactId>
         </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -17,4 +17,4 @@ spring:
       hibernate:
         hbm2ddl:
           auto: update
-#debug: true
+debug: true

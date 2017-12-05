@@ -6,6 +6,8 @@ import com.coketea.dt.example.participant1.repository.StudentRepository;
 import com.coketea.dt.example.participant1.service.StudentService;
 import com.coketea.dt.example.participant2.dubbo.grade.GradeService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -18,7 +20,7 @@ public class StudentServiceImpl implements StudentService {
     @Reference(version = "1.0")
     private GradeService gradeService;
 
-
+    @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public void saveStudentAndGrade(String name, double score) {
         Student student = new Student();

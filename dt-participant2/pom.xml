@@ -35,13 +35,29 @@
 
         <dependency>
             <groupId>com.coketea</groupId>
-            <artifactId>dt-service-def</artifactId>
+            <artifactId>dt-participant-api</artifactId>
         </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.coketea</groupId>
+            <artifactId>dt-datasource</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.coketea</groupId>
+            <artifactId>dt-participant-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.coketea</groupId>
+            <artifactId>dt-client</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
