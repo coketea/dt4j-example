@@ -17,4 +17,9 @@ spring:
       hibernate:
         hbm2ddl:
           auto: update
-debug: true
+  output:
+    ansi:
+      enabled: ALWAYS
+logging:
+  level:
+    root: debug
